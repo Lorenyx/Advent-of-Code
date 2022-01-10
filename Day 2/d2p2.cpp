@@ -9,7 +9,7 @@ int main() {
     int val;
     int x=0, y=0, aim=0;
 
-    if (infile.bad()) {
+    if (!infile) {
         cout << "[-] Could not open file...\n";
         exit(-1);
     }
